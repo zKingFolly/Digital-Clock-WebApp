@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #1c68da;
+}
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #1623d6;
+  color: #caf0f8;
   text-align: center;
   font-size: 34px;
   padding: 12px;
@@ -15,19 +18,32 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  font-family: monospace, Sans-serif;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #0303ce;
+  color: #caf0f8;
+  text-shadow: 0 0 10px #caf0f8;
   margin: 40px 60px 0;
   padding: 20px;
+  border-radius: 10px;
+  letter-spacing: -1px;
+  box-shadow:
+    0 24px 80px rgba(3, 169, 244, 0.52),
+    0 12px 40px rgba(3, 169, 244, 0.36),
+    0 6px 18px rgba(3, 169, 244, 0.22),
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    inset 0 0 40px rgba(3, 169, 244, 0.12);
 }
 
 #clock {
-  margin-top: 20px;
   text-align: center;
   font-size: 70px;
+  margin-top: 20px;
 }
-
+#time-format {
+  font-size: 50px;
+}
 #date {
   text-align: center;
   font-size: 30px;
