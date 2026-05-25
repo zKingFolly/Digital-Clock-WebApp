@@ -1,8 +1,8 @@
 const fulldate = document.getElementById("date");
 const clock = document.getElementById("clock");
 let toggle = false;
-const currentDate = new Date();
 function updateClock() {
+  const currentDate = new Date();
   clock.textContent = currentDate.toLocaleTimeString("default", {
     hour12: !toggle,
   });
